@@ -1,2 +1,74 @@
-.button1
-set-font-weight: bold;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:ital@1&family=Ubuntu&display=swap');
+
+* {
+    --background-color: #0d1821;
+    color: #e3d888;
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1 {
+    text-align: left;
+}
+
+h2 {
+    color: black;
+    float: left;
+}
+
+li {
+    list-style-type: none;
+    border-radius: 30%;
+}
+
+footer {
+    /*background-color: #e3d888;*/
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+}
+
+.button {
+    background-color: var(--background-color);
+    border: none;
+    color: white;
+    float: right;
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 16px;
+    margin: 2px 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: #8aa1b1;
+    color: white;
+}
+
+.dropdown-container {
+    position: relative;
+    float: right;
+}
+
+.dropdown {
+    background-color: red;
+    list-style: none;
+    position: absolute;
+    top: 25px;
+    display: none;
+    text-align-last: center;
+    padding-right: 100px;
+    direction: rtl;
+}
+
+.dropdown-item {
+    font-size: 14px;
+}
